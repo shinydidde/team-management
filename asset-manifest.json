@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/team-management/static/css/main.76ff40f4.chunk.css",
+    "main.js": "/team-management/static/js/main.9c8cd850.chunk.js",
+    "main.js.map": "/team-management/static/js/main.9c8cd850.chunk.js.map",
+    "runtime-main.js": "/team-management/static/js/runtime-main.b5ba119f.js",
+    "runtime-main.js.map": "/team-management/static/js/runtime-main.b5ba119f.js.map",
+    "static/js/2.492e8b6c.chunk.js": "/team-management/static/js/2.492e8b6c.chunk.js",
+    "static/js/2.492e8b6c.chunk.js.map": "/team-management/static/js/2.492e8b6c.chunk.js.map",
+    "index.html": "/team-management/index.html",
+    "precache-manifest.22e0b4c12d85546f4988fa4c6a1dec81.js": "/team-management/precache-manifest.22e0b4c12d85546f4988fa4c6a1dec81.js",
+    "service-worker.js": "/team-management/service-worker.js",
+    "static/css/main.76ff40f4.chunk.css.map": "/team-management/static/css/main.76ff40f4.chunk.css.map"
+  }
+}
