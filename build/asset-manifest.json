@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/team-management/static/css/main.76ff40f4.chunk.css",
-    "main.js": "/team-management/static/js/main.4ea48af5.chunk.js",
-    "main.js.map": "/team-management/static/js/main.4ea48af5.chunk.js.map",
+    "main.css": "/team-management/static/css/main.cb132a96.chunk.css",
+    "main.js": "/team-management/static/js/main.85d95f8f.chunk.js",
+    "main.js.map": "/team-management/static/js/main.85d95f8f.chunk.js.map",
     "runtime-main.js": "/team-management/static/js/runtime-main.b5ba119f.js",
     "runtime-main.js.map": "/team-management/static/js/runtime-main.b5ba119f.js.map",
-    "static/js/2.492e8b6c.chunk.js": "/team-management/static/js/2.492e8b6c.chunk.js",
-    "static/js/2.492e8b6c.chunk.js.map": "/team-management/static/js/2.492e8b6c.chunk.js.map",
+    "static/css/2.829c9cb5.chunk.css": "/team-management/static/css/2.829c9cb5.chunk.css",
+    "static/js/2.8b9281a9.chunk.js": "/team-management/static/js/2.8b9281a9.chunk.js",
+    "static/js/2.8b9281a9.chunk.js.map": "/team-management/static/js/2.8b9281a9.chunk.js.map",
     "index.html": "/team-management/index.html",
-    "precache-manifest.bf4ded087e6999dfc5c1897c4300a682.js": "/team-management/precache-manifest.bf4ded087e6999dfc5c1897c4300a682.js",
+    "precache-manifest.0145de051bc69584d644ea96093c8c64.js": "/team-management/precache-manifest.0145de051bc69584d644ea96093c8c64.js",
     "service-worker.js": "/team-management/service-worker.js",
-    "static/css/main.76ff40f4.chunk.css.map": "/team-management/static/css/main.76ff40f4.chunk.css.map"
+    "static/css/2.829c9cb5.chunk.css.map": "/team-management/static/css/2.829c9cb5.chunk.css.map",
+    "static/css/main.cb132a96.chunk.css.map": "/team-management/static/css/main.cb132a96.chunk.css.map",
+    "static/media/style.scss": "/team-management/static/media/border.2640c427.png"
   }
 }
