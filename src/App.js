@@ -1,18 +1,31 @@
-import React, { Component } from 'react';
-import { HashRouter, Route } from "react-router-dom";
-import './App.css';
-import Home from './components/Home';
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import './App.scss';
+import Home from './components';
+import Certificate from './components/certificate';
 
-class App extends Component {
-  render() {
-    return (
-      <HashRouter basename='/'>
-        <div>
-          <Route exact path="/" component={Home} />
-        </div>
-      </HashRouter>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/star-performer-of-the-month">
+              <Certificate/>
+            </Route>
+            <Route path="/dashboard">
+            <div>Test</div>
+            </Route>
+          </Switch>
+      </Router>
+    </div>
+  );
 }
 
 export default App;
