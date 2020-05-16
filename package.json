@@ -6,7 +6,6 @@
   "dependencies": {
     "bootstrap": "^4.5.0",
     "firebase": "^7.14.4",
-    "gh-pages": "^2.2.0",
     "node-sass": "^4.14.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -36,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }

@@ -1,16 +1,15 @@
 import React from 'react';
+import BrowserRouter from 'react-router-dom/BrowserRouter'
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.css';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+     <App />
+   </BrowserRouter>,
   document.getElementById('root')
 );
 
