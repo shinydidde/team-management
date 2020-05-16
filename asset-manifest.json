@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/team-management/static/css/main.cb132a96.chunk.css",
-    "main.js": "/team-management/static/js/main.49b61432.chunk.js",
-    "main.js.map": "/team-management/static/js/main.49b61432.chunk.js.map",
+    "main.js": "/team-management/static/js/main.cad0460b.chunk.js",
+    "main.js.map": "/team-management/static/js/main.cad0460b.chunk.js.map",
     "runtime-main.js": "/team-management/static/js/runtime-main.b5ba119f.js",
     "runtime-main.js.map": "/team-management/static/js/runtime-main.b5ba119f.js.map",
-    "static/js/2.8247e1e4.chunk.js": "/team-management/static/js/2.8247e1e4.chunk.js",
-    "static/js/2.8247e1e4.chunk.js.map": "/team-management/static/js/2.8247e1e4.chunk.js.map",
+    "static/js/2.29cf0631.chunk.js": "/team-management/static/js/2.29cf0631.chunk.js",
+    "static/js/2.29cf0631.chunk.js.map": "/team-management/static/js/2.29cf0631.chunk.js.map",
     "index.html": "/team-management/index.html",
-    "precache-manifest.66ff267b559d448a9cc7c9a590fdd57d.js": "/team-management/precache-manifest.66ff267b559d448a9cc7c9a590fdd57d.js",
+    "precache-manifest.832647f824a173925c4e28f8e6716645.js": "/team-management/precache-manifest.832647f824a173925c4e28f8e6716645.js",
     "service-worker.js": "/team-management/service-worker.js",
     "static/css/main.cb132a96.chunk.css.map": "/team-management/static/css/main.cb132a96.chunk.css.map",
     "static/media/style.scss": "/team-management/static/media/border.2640c427.png"
