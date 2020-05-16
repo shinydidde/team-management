@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import star from '../images/star.png';
 import './style.scss';
 import { db } from '../firebaseConfig';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
     constructor(props) {
@@ -30,7 +32,8 @@ class Home extends Component {
                 </div>
                 <div className="row">
                     {teamData && teamData.map((item, index) => (
-                        <div className="col-xs-12 col-sm-6 col-lg-4" key={index}>
+                        <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4 frame" key={index}>
+                            {item.enabled === true && <Link to="/star-performer-of-the-month"><img src={star} alt="" className="App-logo"/></Link>}
                             <figure className="effect-bubba">
                                 <img src={item.img} alt="" className="img-thumbnail img-fluid rounded" />
                                 <figcaption className="hidden-sm hidden-xs">

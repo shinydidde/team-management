@@ -2,14 +2,40 @@
 	font-family: 'HearthStone';
 	src: url('../Hearth\ Stone.ttf');
   }
+
+ .frame {
+     position: relative;
+     a {
+        position: absolute;
+        top: -5%;
+        right: -5%;
+        z-index: 1;
+        width: 75px;
+        img {
+            width: 100%;
+        }
+     }
+ } 
 .certificate{
     font-family: 'HearthStone';
     border: double black 6em;
-    height: 100vh;
     background: #ffffff;
     -webkit-border-image: url(../images//border.png) 10% round;
     -o-border-image: url(../images//border.png) 10% round;
     border-image: url(../images//border.png) 10% round;
+    text-transform: capitalize;
+    img{
+        width: 200px;
+    }
+    h6{
+        text-transform: initial;
+        word-spacing: 2.2px;
+    }
+    h2{
+        color: darkred;
+        word-spacing: 12.2px;
+        font-weight: 600;
+    }
 }
 
 /*---------------*/
@@ -51,7 +77,6 @@
 			display: block;
 			min-height: 100%;
 			max-width: 100%;
-			opacity: 0.8;
 		}
 		figcaption {
 			padding: 2em;
