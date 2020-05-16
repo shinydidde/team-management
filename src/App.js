@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <HashRouter>
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home}/>
-          <Route path={process.env.PUBLIC_URL + '/star-performer-of-the-month'} component={Certificate}/>
+          <Route exact path='/' component={Home}/>
+          <Route path='/star-performer-of-the-month' component={Certificate}/>
       </HashRouter>
     </div>
   );
