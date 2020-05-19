@@ -1,12 +1,33 @@
-@font-face {
-	font-family: 'HearthStone';
-	src: url('../Hearth\ Stone.ttf');
+// @font-face {
+// 	font-family: 'HearthStone';
+// 	src: url('../fonts/Hearth\ Stone.ttf');
+//   }
+
+//   @font-face {
+// 	font-family: 'Parisienne-Regular';
+// 	src: url('../fonts/Parisienne-Regular.ttf');
+//   }
+
+  @font-face {
+	font-family: 'Cookie-Regular';
+	src: url('../fonts/Cookie-Regular.ttf');
+  }
+
+  @font-face {
+	font-family: 'Satisfy-Regular';
+	src: url('../fonts//Satisfy-Regular.ttf');
+  }
+  
+
+  h1{
+	  color: #ffffff;
   }
 
  .frame {
-     position: relative;
-     a {
-        position: absolute;
+	 position: relative;
+     span {
+		position: absolute;
+		cursor: pointer;
         top: 12px;
         right: 18px;
         z-index: 1;
@@ -17,24 +38,38 @@
      }
  } 
 .certificate{
-    font-family: 'HearthStone';
+    font-family: 'Satisfy-Regular';
     border: double black 6em;
     background: #ffffff;
     -webkit-border-image: url(../images//border.png) 10% round;
     -o-border-image: url(../images//border.png) 10% round;
     border-image: url(../images//border.png) 10% round;
-    text-transform: capitalize;
+	text-transform: capitalize;
+	min-height: 100vh;
+	h1{
+		color: #000000;
+		font-size: 50px;
+		@media (max-width: 768px) {
+			line-height: 70px;
+		}
+	}
     img{
         width: 200px;
     }
     h6{
         text-transform: initial;
-        word-spacing: 2.2px;
+		word-spacing: 2.2px;
+		font-size: 20px;
+		@media (max-width: 768px) {
+			line-height: 40px;
+		}
     }
     h2{
         color: darkred;
         word-spacing: 12.2px;
-        font-weight: 600;
+		font-weight: 600;
+		font-family: 'Cookie-Regular';
+		font-size: 50px;
     }
 }
 
@@ -121,7 +156,7 @@
 		p {
 			margin: 0;
 			letter-spacing: 1px;
-			font-size: 68.5%;
+			font-size: 60%;
 		}
 	}
 figure.effect-bubba {
@@ -148,7 +183,7 @@ figure.effect-bubba {
 			transform: translate3d(0,0,0);
 		}
 		p {
-            font-family: 'HearthStone';
+            font-family: 'Satisfy-Regular';
 			opacity: 1;
 			-webkit-transform: translate3d(0,0,0);
 			transform: translate3d(0,0,0);
@@ -193,7 +228,7 @@ figure.effect-bubba {
 		transform: translate3d(0,-20px,0);
 	}
 	p {
-        margin-top: 80%;
+        margin-top: 90%;
 		padding: 20px 2.5em;
 		opacity: 0;
 		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;

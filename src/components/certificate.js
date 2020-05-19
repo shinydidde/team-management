@@ -13,7 +13,7 @@ class Certificate extends Component {
         }
     }
     componentDidMount() {
-        const TeamData = db.collection('team').doc('info');
+        const TeamData = db.collection('team').doc('group');
         TeamData.get().then((doc) => {
             if (doc.exists) {
                 this.setState({ Data: doc.data().certificate });
@@ -26,15 +26,16 @@ class Certificate extends Component {
     }
     render() {
         const { Data } = this.state;
+        const name = localStorage.getItem('name');
         return (
             <div className="certificate">
                 <div className="row">
                 {Data &&  <div className="col">
-                    <h1 className="my-5">{Data.title}</h1>
+                    <h1 className="my-3">{Data.title}</h1>
                     <img src={line} className="img-fluid" alt=""/>
-                    <h6 className="my-5">This certifies that</h6>
-                    <h2>{Data.name}</h2>
-                    <h6 className="mt-5">Is the star performer of the month {Data.month}</h6>
+                    <h6 className="my-3">This certifies that</h6>
+                    <h2>{name ? name : Data.name}</h2>
+                    <h6 className="mt-3">Is the star performer of the month {Data.month}</h6>
                     <img src={star} className="img-fluid" alt=""/>
                 </div>}
             </div>
