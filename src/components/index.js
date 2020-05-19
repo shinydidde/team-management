@@ -16,6 +16,7 @@ class Home extends Component {
         push('/star-performer-of-the-month')
     }
     componentDidMount() {
+        //getting data from firebase    
         const TeamData = db.collection('team').doc('group');
         TeamData.get().then((doc) => {
             if (doc.exists) {
