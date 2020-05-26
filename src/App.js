@@ -4,6 +4,7 @@ import $ from 'jquery';
 import './App.scss';
 import Home from './components';
 import Certificate from './components/certificate';
+import Tasks from './components/tasks';
 
 class App extends Component {
   componentDidMount(){
@@ -24,6 +25,7 @@ class App extends Component {
       <HashRouter>
           <Route exact path='/' component={Home}/>
           <Route path='/star-performer-of-the-month' component={Certificate}/>
+          <Route path='/tasks' component={Tasks}/>
       </HashRouter>
     </div>
   );
