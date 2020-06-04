@@ -9,21 +9,34 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      teamData: {},
+      teamData: [],
       certificate: {}
     }
+    this.shuffle = this.shuffle.bind(this);
   }
   getCertificate(name) {
     const { history: { push } } = this.props;
     localStorage.setItem('name', name);
     push('/star-performer-of-the-month')
   }
+
+  shuffle(array) {
+    let i = array.length - 1;
+    for (; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  }
+
   componentDidMount() {
     //getting data from firebase    
     const TeamData = db.collection('team').doc('group');
     TeamData.get().then((doc) => {
       if (doc.exists) {
-        this.setState({ teamData: doc.data().data, certificate: doc.data().certificate });
+        this.setState({ teamData: this.shuffle(doc.data().data.fe), certificate: doc.data().certificate });
       } else {
         console.log("No such document!");
       }
@@ -79,7 +92,7 @@ class Home extends Component {
         <div className="row">
           <div className="col-lg-12 my-5">
             <Slider {...settings}>
-              {teamData && teamData.fe && teamData.fe.map((item, index) => (
+              {teamData && teamData.map((item, index) => (
                 <div className="circle" key={index}>
                   <div className="image-cropper">
                     <img src={item.img} alt="" className="img-fluid" />
