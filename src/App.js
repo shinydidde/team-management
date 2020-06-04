@@ -15,7 +15,7 @@ class App extends Component {
             return false;
           } else if (event.ctrlKey && event.shiftKey && event.keyCode === 73 ) { // Prevent Ctrl+Shift+I        
               return false;
-          } else if (event.shiftKey || event.ctrlKey || event.ctrlKey && event.shiftKey && event.keyCode === 67){
+          } else if ((event.shiftKey) ||( event.ctrlKey) || (event.ctrlKey && event.shiftKey && event.keyCode === 67)){
             return false;
           }
         });
