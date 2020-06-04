@@ -49,6 +49,12 @@ class Home extends Component {
       dots: true,
       infinite: true,
       slidesToShow: 4,
+      autoplay: true,
+      pauseOnFocus: true,
+      pauseOnHover: true,
+      swipeToSlide: true,
+      swipe: true,
+      draggable: true,
       slidesToScroll: 4,
       responsive: [
         {
